@@ -1,22 +1,21 @@
 *{
     margin: 0;
-    padding: 0;
+    border: 0;
 }
 
-.caixa{
-    width: 400px;
-    height: 400px;
-    background-color: rgb(55, 62, 128);
-    border-radius: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.menu{
+    width: 100%;
+    height: 60px;
+    background: rgb(142, 147, 214);
 }
 
-.redondo{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(135, 133, 201);
-    border-radius: 70%;
-    
+.conteudo{
+    width: 100%;
+}
+
+.rodape{
+    width: 100%;
+    text-align: center;
+    background:rgb(90, 94, 156) ;
+    color: white;
 }
