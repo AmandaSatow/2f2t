@@ -5,7 +5,7 @@
 
 .header{
     width: 100%;
-    background: orange;
+    background: rgb(84, 119, 60);
     position: sticky;
     top: 0;
 }
@@ -14,11 +14,15 @@
     width: 100%;
 }
 
+body{
+    background-color: rgb(218, 252, 218);
+}
+
 .rodape{
     width: 100%;
     text-align: center;
-    background:rgb(194, 194, 194) ;
-
+    background: rgb(84, 119, 60);
+    color: white;
 }
 
 .img-mobile {
@@ -29,7 +33,7 @@
 @media screen and (min-width: 768px) {
     .header{
         height: 100px;
-        background-color: lightblue;
+        background-color: rgb(35, 54, 22);
     }
     .conteudo-home{
         display: flex;
@@ -40,7 +44,7 @@
 @media screen and (min-width: 1280px) {
     .header{
         height: 150px;
-        background-color: plum;
+        background-color: rgb(17, 32, 6);
     }
 }
 
@@ -58,7 +62,7 @@ ul{
 }
 
 #logo{
-    width: 10vh;
+    width: 7vh;
     margin: 5px;
 }
 
@@ -66,7 +70,7 @@ ul{
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: orange;
+    background-color: rgb(84, 119, 60);
     overflow: hidden;
 }
 
@@ -82,11 +86,29 @@ ul{
 }
 
 .hamb-line{
-    background-color: white;
+    background-color: rgb(53, 78, 36);
     display: block;
     height: 2px;
-    position: relative;
+   position: relative;
     width: 24px;
+}
+.hamb-line::before,
+.hamb-line::after{
+    background: rgb(53, 78, 36);
+    content:'';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before{
+    top: 5px;
+}
+
+.hamb-line::after{
+    top: -5px;
 }
 
 
@@ -97,6 +119,20 @@ ul{
 }
 
 .menu a:hover{
-    background-color: rgb(199, 129, 0);
+    background-color: rgb(53, 78, 36);
 
+}
+
+.side-menu{
+    display: none;
+}
+
+
+.side-menu:checked ~ nav{
+    max-width: 100%;
+}
+
+.side-menu:checked ~ .hamburger.hambline::before{
+    transform: rotate(-45);
+    top: 0;
 }
