@@ -75,7 +75,7 @@ ul{
     background: var(--white);
     display: block;
     height: 2px;
-    position: relative;
+    position: absolute;
     width: 24px;
 
 } /* Style span tag */
