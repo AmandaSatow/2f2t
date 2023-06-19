@@ -67,7 +67,7 @@ ul{
 /* Menu Icon */
 .hamb{
     cursor: pointer;
-    float: left;
+    float: right;
     padding: 35px 20px;
 }/* Style label tag */
 
