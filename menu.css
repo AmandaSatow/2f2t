@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
 :root{
     --white: #f9f9f9;
-    --black: rgb(35, 54, 22);
+    --black: rgb(59, 75, 50);
     --gray: rgb(84, 119, 60);
 } /* variables*/
 
@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--white);
+    background-color: rgb(221, 241, 207);
     font-family: "Poppins", sans-serif;
 }
 a{
@@ -38,8 +38,8 @@ ul{
 }
 
 #logo {
-    width: 10vh;
-    margin: 5px;
+    width: 7vh;
+    margin: 10px;
 }
 
 /* Nav menu */
