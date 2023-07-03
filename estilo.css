@@ -1,9 +1,6 @@
 
 @import 'menu.css';
 
-.conteudo{
-    width: 100%;
-}
 
 .rodape{
     width: 100%;
@@ -32,4 +29,43 @@
         height: 150px;
         background-color: rgb(17, 32, 6);
     }
+}
+
+
+.conteudo {
+    grid-template-columns: 33% 34% 33%;
+    grid-template-areas: 
+     "geral geral geral";
+}
+
+
+.conteudo {
+    background-color:  rgb(85, 141, 48);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "geral";
+}
+.geral {
+    padding: 10px;
+    width: 100vw;
+    grid-area: geral;
+    background:  rgb(184, 218, 161);
+}
+
+.definicao{
+    text-align: center;
+    width: 100%;
+    text-decoration: underline;
+    padding: 20px;
+    text-size-adjust: 50px;
+}
+
+.h2{
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 35px;
+}
+
+.geral1{
+    padding-bottom: 5px;
 }
