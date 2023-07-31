@@ -13,7 +13,8 @@
  width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
+    
     .header{
         height: 100px;
         background-color: rgb(35, 54, 22);
@@ -22,50 +23,104 @@
         display: flex;
         padding: 10px;
     }
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+
+    }
+
+    .hamb{
+        display: none;
+    }
+
+    #logo {
+        width: 10vh;
+        margin: 10px;
+    }
+
+    .conteudo-droga{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: "def def";
+    }
+
+    .definicao{
+        display: flex;
+        width: 100vw;
+    }
+
+    .descricao{
+        height: 100%;
+        padding: 50px;
+        width: 70vw;
+    }
+
+    .img-definicao{
+        display: block;
+        text-align: end;
+        height: 30vh;
+        width: 30vw;
+
+    }
+
+    #img-def{
+        display: block;
+        width: 50%;
+    }
+
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1224px) {
     .header{
         height: 150px;
         background-color: rgb(17, 32, 6);
     }
-}
 
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
 
-.conteudo {
-    grid-template-columns: 33% 34% 33%;
-    grid-template-areas: 
-     "geral geral geral";
-}
+    }
 
+    .hamb{
+        display: none;
+    }
 
-.conteudo {
-    background-color:  rgb(85, 141, 48);
+    #logo {
+        width: 10vh;
+        margin: 10px;
+    }
+
+.conteudo-droga{
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "geral";
-}
-.geral {
-    padding: 10px;
-    width: 100vw;
-    grid-area: geral;
-    background:  rgb(184, 218, 161);
+    grid-template-columns: 33% 34% 33%;
+    grid-template-areas: "def def def";
 }
 
-.definicao{
-    text-align: center;
-    width: 100%;
-    text-decoration: underline;
-    padding: 20px;
-    text-size-adjust: 50px;
 }
 
-.h2{
-    text-align: left;
-    padding-bottom: 10px;
-    font-size: 35px;
-}
 
-.geral1{
-    padding-bottom: 5px;
-}
+
+
