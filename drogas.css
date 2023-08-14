@@ -42,6 +42,7 @@ ul{
     margin: 5px;
 }
 
+
 /* Nav menu */
 .nav{
     width: 100%;
@@ -129,20 +130,26 @@ ul{
     display: block;
     width: 90%;
 }
-.geral{
-    width: 100vw;
-}
 
 .rodape {
     width: 100vw;
     text-align: center;
     color: #110f0f;
-    background-color: var(--black);;
+    background-color: var(--black);
 }
 
 .geral {
     width: 100vw;
     grid-area: "geral";
+}
+
+.vamosaprender{
+    text-align: center;
+}
+
+#aviso{
+    text-align: center;
+    color: white;
 }
 
 div[class^="item-"]{
